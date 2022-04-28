@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #3e587b;
+  color: #fff;
+  &.scrollOff {
+    overflow: hidden;
+  }
+}
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170px;
+$md1: 1170px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+._container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+  position: relative;
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+  }
+  @media (max-width: $md4) {
+    padding: 10px;
+  }
+}

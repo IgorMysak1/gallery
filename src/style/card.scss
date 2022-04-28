@@ -1,0 +1,113 @@
+.card {
+  min-height: 540px;
+  width: 90%;
+  background: #1d324e;
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+  &__cross {
+    fill: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__picture {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 500px;
+      max-width: 90%;
+      object-fit: contain;
+      cursor: pointer;
+      &.open {
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        object-fit: contain;
+      }
+    }
+  }
+  &__user {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__username {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      height: 90px;
+      width: 90px;
+    }
+  }
+  &__name {
+    font-size: 22px;
+    padding-left: 20px;
+  }
+  &__social {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+  }
+  &__bio {
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+  }
+  &__info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10px;
+    p {
+      font-size: 22px;
+    }
+    ul {
+      width: 100%;
+    }
+    li {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      list-style: none;
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        content: "ʚῖɞ";
+        transform: scale(1.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

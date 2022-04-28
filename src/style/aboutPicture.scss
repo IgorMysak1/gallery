@@ -1,0 +1,24 @@
+.aboutPicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px dashed #3e587b;
+  margin: 10px;
+  padding: 10px;
+  &__content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  &__picture {
+    width: 200px;
+  }
+  &__owner {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+}
